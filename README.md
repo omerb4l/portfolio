@@ -1,7 +1,5 @@
 # 👋 Selam, Ben Ömer! 
 
-> "Kod yazarken kahveyi, debug yaparken sabrı tüketen bir öğrenci."
-
 Bu repo, benim dijital dünyadaki ayak izim, yani **kişisel portfolyom.** Bir yandan vizelerle boğuşurken bir yandan da kendimi modern web teknolojilerinin derinliklerine atıyorum. Sürekli öğrenen, hata yapmaktan korkmayan ve her yeni projede çıtayı biraz daha yukarı taşıyan biriyim.
 
 ---
