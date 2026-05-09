@@ -1,15 +1,22 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, Code, ShieldCheck, Image as ImageIcon } from "lucide-react";
+import { ExternalLink, Code, ShieldCheck, Image as ImageIcon, Users } from "lucide-react";
 
 const projects = [
+  {
+    title: "PreFinder",
+    description: "Hem web hem de mobil platformlarda (Android/iOS) kesintisiz çalışan; oyuncuların birbirini bulmasını, takım kurmasını ve gerçek zamanlı iletişim kurmasını sağlayan kapsamlı topluluk platformu.",
+    tech: ["React Native", "Next.js", "Firebase", "TypeScript"],
+    link: "https://github.com/omerb4l/PreFinder",
+    github: "https://github.com/omerb4l/PreFinder",
+  },
   {
     title: "Anomali Senaryosu Analizi",
     description: "Bilgi Sistemleri Güvenliği kapsamında geliştirilen, ağ trafiği ve sistem davranışlarındaki anomali durumlarını tespit eden kapsamlı analiz projesi.",
     tech: ["Siber Güvenlik", "Network Analysis", "Python"],
-    link: "https://github.com/omerb4l",
-    github: "https://github.com/omerb4l",
+    link: "https://github.com/omerb4l/anomali-senaryosu",
+    github: "https://github.com/omerb4l/anomali-senaryosu",
   },
   {
     title: "Image Processing Suite",
@@ -24,13 +31,6 @@ const projects = [
     tech: ["C#", "SQL", ".NET"],
     link: "https://github.com/omerb4l/FitnessCenterOtomasyonu",
     github: "https://github.com/omerb4l/FitnessCenterOtomasyonu",
-  },
-  {
-    title: "Unity Game Collection",
-    description: "Unity oyun motoru ile geliştirilen çeşitli 2D ve 3D oyun projelerinin birleşimi.",
-    tech: ["Unity", "C#", "Game Design"],
-    link: "https://github.com/omerb4l/CSharp-Game-Collection",
-    github: "https://github.com/omerb4l/CSharp-Game-Collection",
   },
 ];
 
@@ -65,7 +65,8 @@ export default function Projects() {
             >
               <div className="flex justify-between items-start mb-12">
                 <div className="p-6 bg-primary/10 rounded-[1.5rem] text-primary">
-                  {project.title.includes("Anomali") ? <ShieldCheck size={36} /> : 
+                  {project.title === "PreFinder" ? <Users size={36} /> :
+                   project.title.includes("Anomali") ? <ShieldCheck size={36} /> : 
                    project.title.includes("Image") ? <ImageIcon size={36} /> :
                    <Code size={36} />}
                 </div>
