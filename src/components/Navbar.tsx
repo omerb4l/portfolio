@@ -30,7 +30,7 @@ export default function Navbar() {
         scrolled ? "bg-black/90 backdrop-blur-2xl py-6 border-b border-white/5" : "bg-transparent py-10"
       }`}
     >
-      <div className="container mx-auto px-12 max-w-[90rem] flex justify-between items-center">
+      <div className="w-full px-8 md:px-16 lg:px-24 flex justify-between items-center">
         <Link href="/" className="text-3xl md:text-4xl font-black text-primary tracking-tighter hover:scale-105 transition-transform group">
           ÖMER<span className="text-white group-hover:text-primary transition-colors">BAL</span>
         </Link>
